@@ -1,4 +1,7 @@
 $RECYCLE.BIN
+:w
+*~
+*.swp
 *$py.class
 *.DS_Store*
 *.a

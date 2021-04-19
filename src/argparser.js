@@ -3,7 +3,7 @@ const { version } = require('../package.json');
 
 const parser = new ArgumentParser({
   add_help: true,
-  description: 'Generate gh-badges (shields.io) based on lighthouse performance.',
+  description: 'Generate badges based on lighthouse performance.',
 });
 
 const requiredArgs = parser.add_argument_group({ title: 'Required arguments' });
@@ -22,9 +22,16 @@ parser.add_argument('-s', '--single-badge', {
 parser.add_argument('-b', '--badge-style', {
   action: 'store',
   required: false,
-  choices: ['flat', 'flat-square', 'plastic', 'for-the-badge', 'popout', 'popout-square', 'social'],
+  choices: ['flat', 'flat-square', 'plastic', 'for-the-badge', 'pagespeed', 'social'],
   default: 'flat',
   help: 'Define look and feel for the badge',
+});
+
+parser.add_argument('-l', '--preceding-label', {
+  action: 'store',
+  required: false,
+  help: 'Define which label should precede category labels e.g. "" for nothing',
+  default: 'Lighthouse '
 });
 
 parser.add_argument('-o', '--output-path', {
