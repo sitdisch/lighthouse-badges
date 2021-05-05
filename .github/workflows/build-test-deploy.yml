@@ -14,6 +14,12 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
+      - name: Versions
+        run: |
+          echo "node: $(node -v)"
+          echo "npm: $(npm -v)"
+          echo "Docker: $(docker -v)"
+
       - name: NPM Build
         run: |
           yarn install
