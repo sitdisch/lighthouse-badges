@@ -1,6 +1,6 @@
 {
   "name": "@emazzotta/lighthouse-badges",
-  "version": "1.1.5",
+  "version": "1.1.7",
   "description": "🚦Generate gh-badges (shields.io) based on Lighthouse performance.",
   "main": "src/index.js",
   "bin": {
@@ -41,22 +41,22 @@
   },
   "dependencies": {
     "argparse": "2.0.1",
-    "badge-maker": "^3.3.0",
+    "badge-maker": "^3.3.1",
     "clui": "^0.3.6",
-    "lighthouse": "^7.5.0",
+    "lighthouse": "^8.0.0",
     "ramda": "^0.27.0"
   },
   "devDependencies": {
     "@babel/core": "^7.14.3",
     "@babel/plugin-transform-runtime": "^7.14.3",
-    "@babel/preset-env": "^7.14.2",
+    "@babel/preset-env": "^7.14.4",
     "@babel/runtime": "^7.14.0",
-    "babel-jest": "^26.6.3",
-    "eslint": "^7.26.0",
+    "babel-jest": "^27.0.2",
+    "eslint": "^7.27.0",
     "eslint-config-airbnb-base": "^14.2.1",
-    "eslint-plugin-import": "^2.23.2",
+    "eslint-plugin-import": "^2.23.4",
     "husky": "^6.0.0",
-    "jest": "^26.6.3",
+    "jest": "^27.0.3",
     "lint-staged": "^11.0.0",
     "npm-run-all": "^4.1.5"
   },
