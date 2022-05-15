@@ -1,4 +1,4 @@
-[![Build Status](https://github.com/emazzotta/lighthouse-badges/workflows/Build,%20Test%20&%20Deploy/badge.svg)](https://github.com/emazzotta/lighthouse-badges/actions)
+[![Build Status](https://github.com/emazzotta/lighthouse-badges/workflows/build/badge.svg)](https://github.com/emazzotta/lighthouse-badges/actions)
 [![Code Coverage](https://codecov.io/gh/emazzotta/lighthouse-badges/branch/master/graph/badge.svg)](https://github.com/emazzotta/lighthouse-badges/actions)
 <a title="Explore it" target="_blank" href="https://snyk.io/test/github/sitdisch/lighthouse-badges"><img loading="eager" alt="&nbsp;vulnerabilities pending...&nbsp;"  src="https://img.shields.io/snyk/vulnerabilities/github/sitdisch/lighthouse-badges?cacheSeconds=maxAge&logo=snyk" /></a>
 <a title="Check it out" target="_blank" href="https://github.com/GoogleChrome/lighthouse"><img src="https://img.shields.io/github/package-json/dependency-version/sitdisch/lighthouse-badges/lighthouse?logo=lighthouse" /></a>
@@ -75,7 +75,7 @@ lighthouse-badges --urls https://www.youtube.com/
 
 ### Run
 
-Hint: node versions below 12 are not supported.
+Hint: Only node >= 12 is supported.
 
 #### Option 1: npm
 ```bash
