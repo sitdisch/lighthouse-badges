@@ -7,7 +7,7 @@ on:
   pull_request:
 
 env:
-  TAG_PREFIX: ${{ secrets.DOCKERHUB_USERNAME }}/lighthouse-badges
+  TAG_PREFIX: emazzotta/lighthouse-badges
 
 jobs:
   build:
