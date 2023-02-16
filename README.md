@@ -8,7 +8,7 @@
 
 # Lighthouse Badges
 
-[![Lighthouse](./assets/img/lighthouse.svg)](https://github.com/GoogleChrome/lighthouse)
+[![Lighthouse](https://raw.githubusercontent.com/emazzotta/lighthouse-badges/master/assets/img/lighthouse.svg)](https://github.com/GoogleChrome/lighthouse)
 
 This package allows you to easily create Lighthouse badges for all Lighthouse categories.  
 Ever wanted to brag about your sites's awesome Lighthouse performance? Then this is the package for you!  
@@ -38,7 +38,7 @@ In this forked version, I, [Sitdisch](https://github.com/sitdisch "Visit me"), a
 ### Help
 
 ```txt
-usage: lighthouse-badges [-h] [-v] [-s] [-r]
+usage: lighthouse-badges [-h] [-s] [-r]
                          [-b {flat,flat-square,plastic,for-the-badge,pagespeed,social}]
                          [-l "PRECEDING_LABEL "]
                          [-o OUTPUT_PATH]
@@ -49,7 +49,6 @@ Generate badges based on lighthouse performance.
 
 Optional arguments:
  -h, --help             Show this help message and exit.
- -v, --version          Show program's version number and exit.
  -s, --single-badge     Output only one single badge averaging all lighthouse
                         categories' scores; not possible for the pagespeed badge
  -b, --badge-style      Define look and feel for the badge.
@@ -99,14 +98,14 @@ docker run --rm \
 
 ## Contributing
 
-See [contribution guideline](./CONTRIBUTING.md)
+See [contribution guideline](https://github.com/emazzotta/lighthouse-badges/blob/master/CONTRIBUTING.md)
 
 ## Sponsors
 
 Sponsored by [JetBrains](https://www.jetbrains.com/?from=Lighthouse-Badges)
 
 <a href="https://www.jetbrains.com/?from=Lighthouse-Badges">
-  <img alt="Jetbrains Logo" src="./assets/img/jetbrains.svg" height="100">
+  <img alt="Jetbrains Logo" src="https://raw.githubusercontent.com/emazzotta/lighthouse-badges/master/assets/img/jetbrains.svg" height="100">
 </a>
 
 ## Author

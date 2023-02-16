@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 
-const CLI = require('clui');
-const { processParameters, calculateLighthouseMetrics } = require('./lighthouse-badges');
-const { parser } = require('./argparser');
+import CLI from 'clui';
+import { calculateLighthouseMetrics, processParameters } from './lighthouse-badges.js';
+import parser from './argparser.js';
 
 const handleUserInput = async (spinner) => {
   try {
@@ -18,9 +18,6 @@ const handleUserInput = async (spinner) => {
   }
 };
 
-// Only self-invoke if not imported but called directly as executable
-(() => !module.parent && handleUserInput(new CLI.Spinner('Running Lighthouse, please wait...', ['◜', '◠', '◝', '◞', '◡', '◟'])))();
+(() => handleUserInput(new CLI.Spinner('Running Lighthouse, please wait...', ['◜', '◠', '◝', '◞', '◡', '◟'])))();
 
-module.exports = {
-  handleUserInput,
-};
+export default handleUserInput;

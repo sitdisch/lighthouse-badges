@@ -1,5 +1,4 @@
-const { ArgumentParser, ONE_OR_MORE } = require('argparse');
-const { version } = require('../package.json');
+import { ArgumentParser, ONE_OR_MORE } from 'argparse';
 
 const parser = new ArgumentParser({
   add_help: true,
@@ -7,11 +6,6 @@ const parser = new ArgumentParser({
 });
 
 const requiredArgs = parser.add_argument_group({ title: 'Required arguments' });
-
-parser.add_argument('-v', '--version', {
-  action: 'version',
-  version,
-});
 
 parser.add_argument('-s', '--single-badge', {
   action: 'store_true',
@@ -53,6 +47,4 @@ requiredArgs.add_argument('-u', '--urls', {
   help: 'The lighthouse badge(s) will contain the respective average score(s) of all the urls supplied, combined',
 });
 
-module.exports = {
-  parser,
-};
+export default parser;
