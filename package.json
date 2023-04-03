@@ -15,7 +15,7 @@
     "badge-maker": "3.3.1",
     "clui": "0.3.6",
     "lighthouse": "10.0.1",
-    "ramda": "0.28.0"
+    "ramda": "0.29.0"
   },
   "type": "module",
   "author": "Emanuele Mazzotta",
